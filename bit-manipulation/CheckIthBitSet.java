@@ -21,3 +21,6 @@ public class CheckIthBitSet {
 
   }  
 }
+
+
+// Time and Space complexity will be O(1)

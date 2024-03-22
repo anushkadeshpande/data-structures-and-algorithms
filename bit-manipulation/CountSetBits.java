@@ -11,5 +11,10 @@ public class CountSetBits {
     }
 
     System.out.println(count);
+
+
+    // Another approach: keep taking & of number with number - 1 while number does not become 0
+
+    // TC: O(numOfOnes)
   }  
 }

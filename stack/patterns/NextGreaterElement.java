@@ -8,11 +8,11 @@ public class NextGreaterElement {
      * 3. Now, if stack is empty, put -1 in result array, else whatever is at the top is the next greatest element
      * 4. Push the current element in the stack
      */
-  public static long[] nextLargerElement(long[] arr, int n)
+  public static long[] nextLargerElement(long[] arr)
     { 
         Stack<Long> stack = new Stack<>();
-        long[] answer = new long[n];
-        for(int i=n-1; i>=0; i--) {
+        long[] answer = new long[arr.length];
+        for(int i=arr.length-1; i>=0; i--) {
                 while(!stack.empty() && stack.peek() <= arr[i])
                     stack.pop();
                     
@@ -29,7 +29,7 @@ public class NextGreaterElement {
     
     public static void main (String[] args) {
           long[] arr = {1, 3, 2, 4};
-          long[] res = nextLargerElement(arr, arr.length);
+          long[] res = nextLargerElement(arr);
           for(int i=0; i<arr.length; i++)
             System.out.println(res[i]);
     }

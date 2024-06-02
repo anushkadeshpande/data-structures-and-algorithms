@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class WeirdAlgorithm {
+public class P0001_WeirdAlgorithm {
 
   public static void weirdAlgorithm(long n) {
     System.out.print(n + " ");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class P0002_MissingNumber {
+public class P0002MissingNumber {
 
   public static long missingNumber(long n, long[] nums) {
     // find sum of numbers from 1 - n

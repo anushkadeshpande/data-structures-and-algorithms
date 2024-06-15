@@ -5,10 +5,9 @@ public class SubsetSum {
     if(sum == 0)
         return true;
         
-    if(arr.length == 0 || N <= 0)
+    if(N <= 0)
         return false;
         
-    
     if(arr[N-1] <= sum)
         return (isSubsetSum(N-1, arr, sum-arr[N-1]) || isSubsetSum(N-1, arr, sum));
     else

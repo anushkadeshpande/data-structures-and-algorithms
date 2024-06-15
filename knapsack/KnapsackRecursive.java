@@ -13,6 +13,6 @@ public class KnapsackRecursive {
   }
 
   public static void main(String[] args) {
-    System.out.println(knapsack(3, 4, new int[]{1,2,3}, new int[]{4,5,1}));
+    System.out.println(knapsack(3, 4, new int[]{5,0,1,1}, new int[]{1,2,3,4}));
   }
 }

@@ -1,21 +1,16 @@
-public class PartitionsWithGivenDifferenceMemoized {
+public class PartitionsWithGivenDifferenceTabulated {
   public static int[][] dp;
 
   public static int getArrSum(int[] arr, int n, int target) {
-    if (target == 0 && n == 0)
-      return 1;
 
-    if (n <= 0)
-      return 0;
-
-    if (dp[n][target] != -1)
-      return dp[n][target] % (1000000007);
-
-    if (arr[n - 1] <= target)
-      dp[n][target] = getArrSum(arr, n - 1, target - arr[n - 1]) + getArrSum(arr, n - 1, target);
-    else
-      dp[n][target] = getArrSum(arr, n - 1, target);
-
+    for (int i = 1; i <= n; i++) {
+      for (int j = 0; j <= target; j++) {
+        if (arr[i - 1] <= j)
+          dp[i][j] = dp[i - 1][j - arr[i - 1]] + dp[i - 1][j];
+        else
+          dp[i][j] = dp[i - 1][j];
+      }
+    }
     return dp[n][target] % (1000000007);
   }
 
@@ -43,7 +38,12 @@ public class PartitionsWithGivenDifferenceMemoized {
 
     for (int i = 0; i <= n; i++) {
       for (int j = 0; j <= target; j++) {
-        dp[i][j] = -1;
+        if (j == 0 && i == 0)
+          dp[i][j] = 1;
+        else if (i == 0)
+          dp[i][j] = 0;
+        else
+          dp[i][j] = -1;
       }
     }
 

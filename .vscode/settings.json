@@ -1,0 +1,28 @@
+{
+  "java.project.sourcePaths": [
+    ".",
+    "bit-manipulation",
+    "stack/patterns",
+    "test/hello",
+    "test/helloworld",
+    "test/helloworld/src/dsa",
+    "src/dsa",
+    "src",
+    "dsa",
+    "test",
+    "problems/cses",
+    "knapsack",
+    "knapsack/variations/SubsetSum",
+    "knapsack/variations/EqualSumPartition",
+    "knapsack/variations/CountOfSubsetSum",
+    "knapsack/variations/MinimumSumPartition",
+    "knapsack/variations/PartitionsWithGivenDifference",
+    "unbounded-knapsack",
+    "unbounded-knapsack/variations/RodCutting",
+    "unbounded-knapsack/variations/CoinChange",
+    "longest-common-substring"
+  ],
+  "java.project.referencedLibraries": [
+    "test\\lib\\algs4.jar"
+  ]
+}

@@ -20,7 +20,9 @@
     "unbounded-knapsack",
     "unbounded-knapsack/variations/RodCutting",
     "unbounded-knapsack/variations/CoinChange",
-    "longest-common-substring"
+    "longest-common-substring",
+    "longest-common-subsequence",
+    "trie"
   ],
   "java.project.referencedLibraries": [
     "test\\lib\\algs4.jar"

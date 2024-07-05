@@ -26,5 +26,6 @@
   ],
   "java.project.referencedLibraries": [
     "test\\lib\\algs4.jar"
-  ]
+  ],
+  "java.debug.settings.onBuildFailureProceed": true
 }

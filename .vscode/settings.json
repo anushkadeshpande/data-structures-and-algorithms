@@ -22,7 +22,9 @@
     "unbounded-knapsack/variations/CoinChange",
     "longest-common-substring",
     "longest-common-subsequence",
-    "trie"
+    "trie",
+    "trie/problems",
+    "linked-list/problems"
   ],
   "java.project.referencedLibraries": [
     "test\\lib\\algs4.jar"

@@ -51,20 +51,7 @@ public class Trie {
     temp.setEnd();
   }
 
-  public boolean search(String word) {
-    Node temp = this.root;
-    int i = 0;
-
-    while (i < word.length()) {
-      if (!temp.containsKey(word.charAt(i)))
-        return false;
-
-      temp = temp.get(word.charAt(i));
-      i++;
-    }
-
-    return temp.isEnd();
-  }
+ 
 
   public boolean startsWith(String prefix) {
     Node temp = this.root;

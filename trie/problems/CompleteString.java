@@ -65,5 +65,6 @@ public class CompleteString {
   
   public static void main(String[] args) {
     System.out.println(completeString(6, new String[]{"n", "ni", "nin", "ninj", "ninja", "ninga"}));
+    System.out.println(completeString(2, new String[]{"ab", "bc"}));
   }
 }

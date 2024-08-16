@@ -23,7 +23,8 @@
     "unbounded-knapsack",
     "unbounded-knapsack\\variations\\CoinChange",
     "unbounded-knapsack\\variations\\RodCutting",
-    "shortest-common-supersequence"
+    "shortest-common-supersequence",
+    "graph"
   ],
   "java.project.referencedLibraries": [
     "d:\\Learning\\Data Structures and Algorithms\\data-structures-and-algorithms\\test\\lib\\algs4.jar"

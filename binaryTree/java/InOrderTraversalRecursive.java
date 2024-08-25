@@ -1,4 +1,4 @@
-package binaryTree.java;
+package java;
 
 public class InOrderTraversalRecursive {
     public static void inOrderTraversal(Node root) {

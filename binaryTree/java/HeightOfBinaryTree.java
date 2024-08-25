@@ -1,4 +1,4 @@
-package binaryTree.java;
+package java;
 
 public class HeightOfBinaryTree {
     public static int getHeight(Node root) {

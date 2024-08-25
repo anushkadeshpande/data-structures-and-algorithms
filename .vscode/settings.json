@@ -25,7 +25,8 @@
     "unbounded-knapsack\\variations\\RodCutting",
     "shortest-common-supersequence",
     "graph",
-    "matrix-chain-multiplication"
+    "matrix-chain-multiplication",
+    "binaryTree",
   ],
   "java.project.referencedLibraries": [
     "d:\\Learning\\Data Structures and Algorithms\\data-structures-and-algorithms\\test\\lib\\algs4.jar"

@@ -19,6 +19,7 @@ public class InfixToPostfix {
       // if the current character is a letter / digit, add it to the stack
       if(Character.isLetterOrDigit(c)) {
         post += c;
+        post += ' ';
       } else {
 
         // if current char is an opening brace, push it to the stack
@@ -33,6 +34,7 @@ public class InfixToPostfix {
             // if it is a closing brace, till we don't get the corresponding opening brace, pop it from the stack and add to the postorder expression
             while(stack.peek() != '(') {
               post += stack.pop();
+              post += ' ';
             }
 
             stack.pop();
@@ -47,6 +49,7 @@ public class InfixToPostfix {
               stack.push(c);
             } else {
               post += stack.pop();
+              post += ' ';
               stack.push(c);
             }
           }
@@ -57,12 +60,13 @@ public class InfixToPostfix {
     // pop everything else remaining in the stack and add to the postfix expression
     while(!stack.empty()) {
       post += stack.pop();
+      post += ' ';
     }
 
     return post;
   }
   public static void main(String[] args) {
-    System.out.println(convertToPostfix("a*(b+c)*d")); 
+    System.out.println(convertToPostfix("1*(2+3)*4")); 
   }
 
   public static int getPriority(char operator) {

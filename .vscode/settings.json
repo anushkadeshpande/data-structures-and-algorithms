@@ -30,7 +30,8 @@
     "two-pointer",
     "problems\\misc",
     "heap",
-    "backtracking"
+    "backtracking",
+    "binarySearch"
   ],
   "java.project.referencedLibraries": [
     "d:\\Learning\\Data Structures and Algorithms\\data-structures-and-algorithms\\test\\lib\\algs4.jar"

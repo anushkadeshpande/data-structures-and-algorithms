@@ -12,7 +12,7 @@ public class BinarySearchRecursive {
     if (start > end)
       return -1;
 
-    int mid = (start + end) / 2;
+      int mid = start + ((end - start) / 2);
 
     if (arr[mid] == target)
       return mid;

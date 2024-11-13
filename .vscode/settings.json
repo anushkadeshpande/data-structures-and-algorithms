@@ -29,7 +29,8 @@
     "binaryTree",
     "two-pointer",
     "problems\\misc",
-    "heap"
+    "heap",
+    "backtracking"
   ],
   "java.project.referencedLibraries": [
     "d:\\Learning\\Data Structures and Algorithms\\data-structures-and-algorithms\\test\\lib\\algs4.jar"
